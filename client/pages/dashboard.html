@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | Dashboard</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>ESS Portal</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="leave.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave
+                </a>
+            </li>
+
+            <li>
+                <a href="payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="performance.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1 id="welcomeText">Welcome</h1>
+
+                <p>Employee Self Service Portal</p>
+
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-solid fa-bell"></i>
+
+                <img id="profileImage">
+
+            </div>
+
+        </header>
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Attendance</h3>
+
+                <h2 id="attendanceValue">0%</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+                <h3>Leave Balance</h3>
+
+                <h2 id="leaveValue">0</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h3>Salary</h3>
+
+                <h2 id="salaryValue">₹0</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>Performance</h3>
+
+                <h2 id="performanceValue">-</h2>
+
+            </div>
+
+        </section>
+
+        <section class="content-grid">
+
+            <div class="panel">
+
+                <h2>Recent Activities</h2>
+
+                <ul id="activityList"></ul>
+
+            </div>
+
+            <div class="panel">
+
+                <h2>Announcements</h2>
+
+                <div id="announcementList"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

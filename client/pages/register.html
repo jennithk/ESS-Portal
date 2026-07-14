@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | Register</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="left-panel">
+
+        <h1>ESS Portal</h1>
+
+        <p>
+
+            Create your employee account to access attendance,
+            leave, payroll, training and more.
+
+        </p>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="login-card">
+
+            <h2>Create Account</h2>
+
+            <p>Employee Registration</p>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+
+                    <label>Employee ID</label>
+
+                    <input
+                        type="text"
+                        id="employeeId"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>First Name</label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Last Name</label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Phone</label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Department</label>
+
+                    <input
+                        type="text"
+                        id="department"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Designation</label>
+
+                    <input
+                        type="text"
+                        id="designation"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Role</label>
+
+                    <select id="role">
+
+                        <option value="Employee">Employee</option>
+
+                        <option value="HR">HR</option>
+
+                        <option value="Admin">Admin</option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit">
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <p class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/auth.js"></script>
+
+</body>
+
+</html>

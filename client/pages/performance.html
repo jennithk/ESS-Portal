@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | Performance</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/performance.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="attendance.html"><i class="fa-solid fa-calendar-check"></i> Attendance</a></li>
+            <li><a href="leave.html"><i class="fa-solid fa-file-circle-check"></i> Leave</a></li>
+            <li><a href="payroll.html"><i class="fa-solid fa-wallet"></i> Payroll</a></li>
+
+            <li class="active">
+                <a href="performance.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li><a href="training.html"><i class="fa-solid fa-graduation-cap"></i> Training</a></li>
+            <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Performance Reviews</h1>
+
+                <p>Employee Performance History</p>
+
+            </div>
+
+        </header>
+
+        <div class="performance-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Review Period</th>
+                        <th>Rating</th>
+                        <th>Goals Completed</th>
+                        <th>Reviewer</th>
+                        <th>Feedback</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="performanceTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/performance.js"></script>
+
+</body>
+
+</html>

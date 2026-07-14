@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | HR Training</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/hr-training.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal HR</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="hr-dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-leaves.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-performance.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="hr-training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Training Management</h1>
+
+                <p>Assign Employee Training Programs</p>
+
+            </div>
+
+        </header>
+
+        <form id="trainingForm" class="training-form">
+
+            <input
+                id="employeeId"
+                placeholder="Employee ID"
+                required>
+
+            <input
+                id="title"
+                placeholder="Training Title"
+                required>
+
+            <input
+                id="trainer"
+                placeholder="Trainer Name"
+                required>
+
+            <input
+                type="date"
+                id="trainingDate"
+                required>
+
+            <textarea
+                id="description"
+                placeholder="Training Description"
+                rows="4"
+                required></textarea>
+
+            <button type="submit">
+                Assign Training
+            </button>
+
+        </form>
+
+        <section class="employee-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Employee</th>
+                        <th>Training</th>
+                        <th>Trainer</th>
+                        <th>Date</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="trainingTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/hr-training.js"></script>
+
+</body>
+
+</html>

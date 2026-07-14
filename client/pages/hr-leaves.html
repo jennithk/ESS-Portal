@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | HR Leave Management</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/hr-leaves.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal HR</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="hr-dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="hr-leaves.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-performance.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Leave Requests</h1>
+
+                <p>Approve or Reject Employee Leave Requests</p>
+
+            </div>
+
+        </header>
+
+        <section class="leave-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Employee</th>
+                        <th>Leave Type</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leaveTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/hr-leaves.js"></script>
+
+</body>
+
+</html>

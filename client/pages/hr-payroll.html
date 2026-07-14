@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | HR Payroll</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/hr-payroll.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal HR</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="hr-dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-leaves.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave Requests
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="hr-payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-performance.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Payroll Management</h1>
+
+                <p>Create and Manage Employee Payroll</p>
+
+            </div>
+
+        </header>
+
+        <form id="payrollForm" class="payroll-form">
+
+            <input id="employeeId" placeholder="Employee ID" required>
+
+            <input id="month" placeholder="Month" required>
+
+            <input id="year" type="number" placeholder="Year" required>
+
+            <input id="basicSalary" type="number" placeholder="Basic Salary" required>
+
+            <input id="hra" type="number" placeholder="HRA">
+
+            <input id="bonus" type="number" placeholder="Bonus">
+
+            <input id="deductions" type="number" placeholder="Deductions">
+
+            <button type="submit">
+                Generate Payroll
+            </button>
+
+        </form>
+
+        <section class="payroll-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Employee</th>
+                        <th>Month</th>
+                        <th>Year</th>
+                        <th>Net Salary</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="payrollTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/hr-payroll.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | Leave</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/leave.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="leave.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave
+                </a>
+            </li>
+
+            <li>
+                <a href="payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="performance.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Leave Management</h1>
+
+                <p>Apply and track your leave requests</p>
+
+            </div>
+
+        </header>
+
+        <div class="leave-form">
+
+            <select id="leaveType">
+
+                <option value="Casual">Casual Leave</option>
+
+                <option value="Sick">Sick Leave</option>
+
+                <option value="Earned">Earned Leave</option>
+
+                <option value="Work From Home">Work From Home</option>
+
+            </select>
+
+            <input type="date" id="fromDate">
+
+            <input type="date" id="toDate">
+
+            <textarea id="reason" placeholder="Reason"></textarea>
+
+            <button id="applyLeaveBtn">
+
+                Apply Leave
+
+            </button>
+
+        </div>
+
+        <div class="leave-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leaveTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/leave.js"></script>
+
+</body>
+
+</html>

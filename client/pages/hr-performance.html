@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESS Portal | HR Performance</title>
+
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/hr-performance.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>ESS Portal HR</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="hr-dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-leaves.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Leave Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-payroll.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="hr-performance.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Performance
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-training.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Training
+                </a>
+            </li>
+
+            <li>
+                <a href="hr-notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Performance Management</h1>
+
+                <p>Add and Review Employee Performance</p>
+
+            </div>
+
+        </header>
+
+        <form id="performanceForm" class="performance-form">
+
+            <input
+                type="text"
+                id="employeeId"
+                placeholder="Employee ID"
+                required>
+
+            <input
+                type="text"
+                id="reviewPeriod"
+                placeholder="Review Period (Q1 2026)"
+                required>
+
+            <input
+                type="number"
+                id="rating"
+                placeholder="Rating (1-5)"
+                min="1"
+                max="5"
+                required>
+
+            <input
+                type="number"
+                id="goalsCompleted"
+                placeholder="Goals Completed"
+                required>
+
+            <input
+                type="text"
+                id="reviewer"
+                placeholder="Reviewer Name"
+                required>
+
+            <textarea
+                id="feedback"
+                placeholder="Performance Feedback"
+                rows="4"
+                required></textarea>
+
+            <button type="submit">
+                Save Performance
+            </button>
+
+        </form>
+
+        <section class="employee-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Employee</th>
+                        <th>Review</th>
+                        <th>Rating</th>
+                        <th>Goals</th>
+                        <th>Reviewer</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="performanceTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/hr-performance.js"></script>
+
+</body>
+
+</html>
